@@ -6,42 +6,54 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
+import DumanginLogo from "@/assets/DumanginADM_Logo_Principal.png";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path="/" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />
-          {/* Dumangin floating badge (fixed, follows scroll) */}
-          <div className="fixed bottom-4 right-4 z-[9999] select-none">
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/90 px-3 py-2 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-slate-950/70">
-              <div className="grid h-7 w-7 place-items-center rounded-full bg-slate-900 text-[11px] font-semibold text-white ring-1 ring-white/10">
-                D
-              </div>
-              <span className="text-xs font-medium tracking-wide text-white/90">Dumangin</span>
-            </div>
+
+          {/* Dumangin Badge - Proporção igual Bierz */}
+          <div className="fixed bottom-4 right-4 z-[9999]">
+            <a
+              href="https://dumangin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex items-center gap-2
+                h-8 px-3
+                rounded-full
+                bg-black/80
+                backdrop-blur-md
+                shadow-xl
+                transition-all duration-300
+                hover:opacity-100
+                opacity-90
+              "
+            >
+              <img
+                src={DumanginLogo}
+                alt="Dumangin"
+                className="w-5 h-5 object-contain"
+              />
+              <span className="text-sm font-medium tracking-wide text-blue-300">
+                Dumangin
+              </span>
+            </a>
           </div>
+
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
