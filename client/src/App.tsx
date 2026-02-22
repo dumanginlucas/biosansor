@@ -47,7 +47,7 @@ function App() {
               <img
                 src={DumanginLogo}
                 alt="Dumangin"
-                className="w-5 h-5 object-contain"
+                className="w-7 h-7 object-contain"
               />
               <span className="text-sm font-medium tracking-wide text-[#1e2a44]">
                 Dumangin
