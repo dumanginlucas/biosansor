@@ -33,6 +33,15 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          {/* Dumangin floating badge (fixed, follows scroll) */}
+          <div className="fixed bottom-4 right-4 z-[9999] select-none">
+            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/90 px-3 py-2 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-slate-950/70">
+              <div className="grid h-7 w-7 place-items-center rounded-full bg-slate-900 text-[11px] font-semibold text-white ring-1 ring-white/10">
+                D
+              </div>
+              <span className="text-xs font-medium tracking-wide text-white/90">Dumangin</span>
+            </div>
+          </div>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
