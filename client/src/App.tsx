@@ -25,7 +25,7 @@ function App() {
           <Toaster />
           <Router />
 
-          {/* Dumangin Badge - Proporção igual Bierz */}
+          {/* Dumangin Badge */}
           <div className="fixed bottom-4 right-4 z-[9999]">
             <a
               href="https://dumangin.com"
@@ -35,12 +35,13 @@ function App() {
                 flex items-center gap-2
                 h-8 px-3
                 rounded-full
-                bg-black/80
+                bg-white/80
                 backdrop-blur-md
-                shadow-xl
+                shadow-lg
+                border border-white/40
                 transition-all duration-300
                 hover:opacity-100
-                opacity-90
+                opacity-95
               "
             >
               <img
@@ -48,7 +49,7 @@ function App() {
                 alt="Dumangin"
                 className="w-5 h-5 object-contain"
               />
-              <span className="text-sm font-medium tracking-wide text-blue-300">
+              <span className="text-sm font-medium tracking-wide text-[#1e2a44]">
                 Dumangin
               </span>
             </a>
