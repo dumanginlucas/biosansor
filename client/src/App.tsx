@@ -35,10 +35,10 @@ function App() {
                 flex items-center gap-2
                 h-8 px-3
                 rounded-full
-                bg-white/80
+                bg-slate-200/70
                 backdrop-blur-md
                 shadow-lg
-                border border-white/40
+                border border-slate-300/60
                 transition-all duration-300
                 hover:opacity-100
                 opacity-95
