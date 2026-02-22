@@ -28,7 +28,7 @@ function App() {
           {/* Dumangin Badge */}
           <div className="fixed bottom-4 right-4 z-[9999]">
             <a
-              href="https://dumangin.com"
+              href="https://www.dumanginadm.com.br"
               target="_blank"
               rel="noopener noreferrer"
               className="
