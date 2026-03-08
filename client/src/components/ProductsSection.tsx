@@ -132,12 +132,12 @@ export default function ProductsSection() {
         </div>
 
         {/* Model selector tabs */}
-        <div className="reveal flex flex-wrap gap-3 mb-8">
+        <div className="reveal grid grid-cols-2 lg:flex lg:flex-wrap gap-3 mb-8">
           {products.map((p, i) => (
             <button
               key={p.id}
               onClick={() => setActive(i)}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+              className={`w-full lg:w-auto px-4 sm:px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
                 active === i ? 'text-white shadow-lg' : 'bg-white border hover:shadow-md'
               }`}
               style={{
@@ -158,10 +158,10 @@ export default function ProductsSection() {
             className="bg-white rounded-3xl shadow-xl overflow-hidden border"
             style={{ borderColor: 'oklch(0.90 0.02 220)' }}
           >
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1 xl:grid-cols-2">
               {/* Left: Product visual */}
               <div
-                className="relative flex flex-col items-center justify-center p-8 md:p-12 min-h-[400px]"
+                className="relative flex flex-col items-center justify-center p-6 sm:p-8 md:p-12 min-h-[400px] pb-20 sm:pb-24 xl:pb-12"
                 style={{ backgroundColor: product.bg }}
               >
                 {/* Tag */}
@@ -195,7 +195,7 @@ export default function ProductsSection() {
                 </div>
 
                 {/* Navigation arrows */}
-                <div className="absolute bottom-6 right-6 flex gap-2">
+                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex gap-2">
                   <button
                     onClick={prev}
                     className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center transition-all hover:shadow-lg hover:-translate-x-0.5"
@@ -213,7 +213,7 @@ export default function ProductsSection() {
                 </div>
 
                 {/* Dots */}
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 sm:bottom-6">
                   {products.map((_, i) => (
                     <button
                       key={i}
@@ -230,7 +230,7 @@ export default function ProductsSection() {
               </div>
 
               {/* Right: Product details */}
-              <div className="p-8 md:p-12 flex flex-col justify-between">
+              <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-between">
                 <div>
                   <h3
                     className="text-3xl md:text-4xl font-bold mb-2"

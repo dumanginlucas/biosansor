@@ -13,7 +13,7 @@ export default function Footer() {
       style={{ backgroundColor: 'white', borderColor: 'oklch(0.92 0.02 220)' }}
     >
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div

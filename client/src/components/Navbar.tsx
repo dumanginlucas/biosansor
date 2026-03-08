@@ -35,7 +35,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="w-9 h-9 rounded-full flex items-center justify-center"
@@ -59,7 +59,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -78,7 +78,7 @@ export default function Navbar() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg"
+              className="hidden lg:flex items-center gap-2 px-4 xl:px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg whitespace-nowrap"
               style={{ backgroundColor: 'oklch(0.32 0.08 220)', fontFamily: 'DM Sans, sans-serif' }}
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ export default function Navbar() {
             </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2 rounded-lg transition-colors"
+              className="lg:hidden p-2 rounded-lg transition-colors"
               style={{ color: 'oklch(0.32 0.08 220)' }}
             >
               {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -99,7 +99,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-slate-100 shadow-lg">
           <div className="container py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

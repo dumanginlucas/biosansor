@@ -26,14 +26,14 @@ function App() {
           <Router />
 
           {/* Dumangin Badge */}
-          <div className="fixed bottom-4 right-4 z-[9999]">
+          <div className="fixed bottom-4 right-4 z-[9999] sm:bottom-5 sm:right-5">
             <a
               href="https://www.dumanginadm.com.br"
               target="_blank"
               rel="noopener noreferrer"
               className="
                 flex items-center gap-2
-                h-8 px-3
+                h-8 px-3 sm:h-9 sm:px-3
                 rounded-full
                 bg-slate-200/70
                 backdrop-blur-md
@@ -47,9 +47,9 @@ function App() {
               <img
                 src={DumanginLogo}
                 alt="Dumangin"
-                className="w-7 h-7 object-contain"
+                className="w-6 h-6 sm:w-7 sm:h-7 object-contain"
               />
-              <span className="text-sm font-medium tracking-wide text-[#1e2a44]">
+              <span className="hidden sm:inline text-sm font-medium tracking-wide text-[#1e2a44]">
                 Dumangin
               </span>
             </a>

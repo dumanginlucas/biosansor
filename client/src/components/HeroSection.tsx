@@ -27,7 +27,7 @@ export default function HeroSection() {
 
       {/* Decorative circle top-right */}
       <div
-        className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.06] pointer-events-none"
+        className="absolute top-0 right-0 w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] lg:w-[600px] lg:h-[600px] rounded-full opacity-[0.06] pointer-events-none"
         style={{
           background: 'radial-gradient(circle, oklch(0.32 0.08 220) 0%, transparent 70%)',
           transform: 'translate(30%, -30%)',
@@ -35,11 +35,11 @@ export default function HeroSection() {
       />
 
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-80px)] py-16">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center min-h-[calc(100vh-80px)] py-12 md:py-16">
           {/* Left: Text */}
           <div className="flex flex-col justify-center">
             {/* Badge */}
-            <div className="reveal inline-flex items-center gap-2 mb-6 self-start">
+            <div className="reveal flex flex-wrap items-center gap-2 mb-6 self-start">
               <span
                 className="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider"
                 style={{
@@ -98,7 +98,7 @@ export default function HeroSection() {
             </p>
 
             {/* Key stats */}
-            <div className="reveal delay-300 grid grid-cols-3 gap-4 mb-10">
+            <div className="reveal delay-300 grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
               {[
                 { value: '+90%', label: 'Eficiência DBO' },
                 { value: '5 anos', label: 'Garantia' },
@@ -156,7 +156,7 @@ export default function HeroSection() {
             </div>
 
             {/* Location badge */}
-            <div className="reveal delay-500 flex items-center gap-2 mt-8">
+            <div className="reveal delay-500 flex flex-wrap items-center gap-2 mt-8">
               <div
                 className="w-2 h-2 rounded-full"
                 style={{ backgroundColor: 'oklch(0.48 0.08 155)' }}
@@ -171,7 +171,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Product Image */}
-          <div className="reveal-right relative flex items-center justify-center">
+          <div className="reveal-right relative flex items-center justify-center mt-4 xl:mt-0">
             {/* Background circle */}
             <div
               className="absolute inset-0 rounded-full opacity-10"
@@ -193,7 +193,7 @@ export default function HeroSection() {
 
             {/* Floating badge */}
             <div
-              className="absolute bottom-8 left-0 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 z-20"
+              className="absolute left-1/2 -translate-x-1/2 bottom-4 sm:bottom-6 md:bottom-8 xl:left-0 xl:translate-x-0 bg-white rounded-2xl shadow-xl p-3 sm:p-4 flex items-center gap-3 z-20 w-[calc(100%-1.5rem)] max-w-sm xl:w-auto"
               style={{ border: '1px solid oklch(0.90 0.02 220)' }}
             >
               <div
@@ -206,7 +206,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <div
-                  className="text-sm font-bold"
+                  className="text-sm font-bold leading-tight"
                   style={{ color: 'oklch(0.18 0.02 220)', fontFamily: 'DM Sans, sans-serif' }}
                 >
                   Laudos INMETRO

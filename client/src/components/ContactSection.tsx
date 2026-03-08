@@ -79,7 +79,7 @@ export default function ContactSection() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="wa-pulse inline-flex items-center gap-4 px-10 py-5 rounded-full text-white font-bold text-lg transition-all duration-200 hover:opacity-95 hover:shadow-2xl hover:-translate-y-1 mb-6"
+              className="wa-pulse inline-flex w-full sm:w-auto items-center justify-center gap-3 sm:gap-4 px-6 sm:px-10 py-4 sm:py-5 rounded-full text-white font-bold text-base sm:text-lg transition-all duration-200 hover:opacity-95 hover:shadow-2xl hover:-translate-y-1 mb-6"
               style={{
                 backgroundColor: '#25D366',
                 fontFamily: 'DM Sans, sans-serif',
@@ -107,7 +107,7 @@ export default function ContactSection() {
         </div>
 
         {/* Quick FAQ */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-6">
           {[
             {
               q: 'Precisa de caminhão limpa-fossa?',

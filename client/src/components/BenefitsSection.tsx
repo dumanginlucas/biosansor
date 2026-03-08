@@ -138,7 +138,7 @@ export default function BenefitsSection() {
 
         {/* Bottom stats bar */}
         <div
-          className="reveal mt-16 rounded-2xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="reveal mt-16 rounded-2xl p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8"
           style={{ backgroundColor: 'oklch(0.32 0.08 220)' }}
         >
           {[
